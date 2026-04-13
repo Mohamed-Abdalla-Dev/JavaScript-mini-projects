@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+.switcher {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.switcher li {
+  cursor: pointer;
+  padding: 20px 0;
+  font-weight: 500;
+  background-color: #eee;
+  flex: 1;
+  text-align: center;
+  transition: 0.4s;
+}
+.switcher li.active {
+  background-color: #607d8b;
+  color: white;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* لضمان عدم تشوه الصورة */
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+div {
+  width: 300px;
+  margin: 20px auto;
+}
+input {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #d7d7d7;
+  background-color: #f9f9f9;
+}
+input:focus {
+  outline: none;
+}
+div .progress {
+  height: 2px;
+  width: 0px;
+  display: block;
+  position: relative;
+  top: -2px;
+  transition: 0.5s;
+}
+div .count {
+  display: block;
+  text-align: right;
+  padding: 5px;
+  font-size: 12px;
+}
+.zero {
+  font-weight: bold;
+  color: red;
+}

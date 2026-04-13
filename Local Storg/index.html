@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #eee;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        background-color: #9e9e9e;
+        max-width: 250px;
+        width: 100%;
+        margin: 15px auto;
+        padding: 10px 20px;
+        list-style: none;
+        gap: 20px;
+      }
+      li {
+        padding: 20px 20px;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      li.active,
+      li:hover {
+        opacity: 1;
+      }
+      ul li:first-child {
+        background-color: red;
+      }
+      ul li:nth-child(2) {
+        background-color: green;
+      }
+      ul li:nth-child(3) {
+        background-color: blue;
+      }
+      ul li:last-child {
+        background-color: black;
+      }
+      .experiment {
+        background-color: red;
+        max-width: 400px;
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="active" data-color="red"></li>
+      <li data-color="green"></li>
+      <li data-color="blue"></li>
+      <li data-color="black"></li>
+    </ul>
+    <div class="experiment"></div>
+    <script src="min.js"></script>
+  </body>
+</html>
